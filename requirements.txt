@@ -1,0 +1,31 @@
+# FastAPI and Web Framework
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+pydantic==2.6.0
+pydantic-settings==2.1.0
+python-multipart==0.0.6
+
+# Google APIs
+google-analytics-admin==0.22.0
+google-analytics-data==0.18.0
+google-auth==2.27.0
+google-auth-oauthlib==1.2.0
+google-auth-httplib2==0.2.0
+google-api-python-client==2.115.0
+
+# Azure SDKs
+azure-identity==1.15.0
+azure-keyvault-secrets==4.7.0
+azure-cosmos==4.5.1
+azure-monitor-opentelemetry==1.2.0
+
+# Utilities
+python-dotenv==1.0.0
+httpx==0.26.0
+tenacity==8.2.3
+
+# Testing
+pytest==8.0.0
+pytest-asyncio==0.23.4
+pytest-cov==4.1.0
+httpx==0.26.0
