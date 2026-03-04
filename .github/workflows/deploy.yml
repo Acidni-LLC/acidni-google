@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-  REGISTRY: crterprint.azurecr.io
+  REGISTRY: cracidnidev.azurecr.io
   IMAGE_NAME: acidni-google
   RESOURCE_GROUP: rg-dev-terprint-ca
   CONTAINER_APP: ca-acidni-google-dev
@@ -25,7 +25,7 @@ jobs:
           creds: ${{ secrets.ORG_AZURE_CREDENTIALS }}
 
       - name: Login to ACR
-        run: az acr login --name crterprint
+        run: az acr login --name cracidnidev
 
       - name: Build Docker image
         run: |
