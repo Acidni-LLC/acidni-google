@@ -8,7 +8,7 @@ on:
 env:
   REGISTRY: cracidnidev.azurecr.io
   IMAGE_NAME: acidni-google
-  RESOURCE_GROUP: rg-dev-terprint-ca
+  RESOURCE_GROUP: rg-dev-acidni-shared
   CONTAINER_APP: ca-acidni-google-dev
 
 jobs:
