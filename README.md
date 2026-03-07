@@ -1,4 +1,4 @@
-# Acidni Google Services Manager
+﻿# Acidni Google Services Manager
 
 Centralized Google API management service for all Acidni applications.
 
@@ -19,14 +19,14 @@ uvicorn main:app --reload --port 8000
 
 ## Features
 
-- ✅ Google Analytics 4 management
-- ✅ Google Tag Manager operations
-- ✅ Google AdSense reporting
-- ✅ Google Ads campaign management
-- ✅ API enablement/disablement
-- ✅ Configuration management via Cosmos DB
-- ✅ Azure Key Vault integration
-- ✅ Health monitoring
+- âœ… Google Analytics 4 management
+- âœ… Google Tag Manager operations
+- âœ… Google AdSense reporting
+- âœ… Google Ads campaign management
+- âœ… API enablement/disablement
+- âœ… Configuration management via Cosmos DB
+- âœ… Azure Key Vault integration
+- âœ… Health monitoring
 
 ## API Endpoints
 
@@ -53,7 +53,7 @@ Automatically deploys to Azure Container Apps via GitHub Actions on push to `mai
 # Manual deployment
 docker build -t crterprint.azurecr.io/acidni-google:dev-latest .
 docker push crterprint.azurecr.io/acidni-google:dev-latest
-az containerapp update --name ca-acidni-google-dev --resource-group rg-dev-terprint-ca --image crterprint.azurecr.io/acidni-google:dev-latest
+az containerapp update --name ca-acidni-google-dev --resource-group rg-dev-acidni-shared --image crterprint.azurecr.io/acidni-google:dev-latest
 ```
 
 ## Environment Variables
@@ -64,7 +64,7 @@ az containerapp update --name ca-acidni-google-dev --resource-group rg-dev-terpr
 
 ## Status
 
-🚧 **In Development** - Core framework complete, Google API integrations in progress
+ðŸš§ **In Development** - Core framework complete, Google API integrations in progress
 
 ---
 
