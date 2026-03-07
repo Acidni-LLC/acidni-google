@@ -16,6 +16,7 @@ from services.ads import AdsManager
 from services.service_mgmt import ServiceManager
 from models.config import ProductGoogleConfig, AnalyticsEvent, APIEnableRequest
 from models.responses import HealthResponse, ErrorResponse
+from problem_details import register_problem_handlers
 
 # Configure logging
 logging.basicConfig(
@@ -74,6 +75,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# RFC 7807 Problem Details error handlers
+register_problem_handlers(app, app_name="acidni-google")
 
 
 # Dependency for APIM subscription key validation (placeholder)
